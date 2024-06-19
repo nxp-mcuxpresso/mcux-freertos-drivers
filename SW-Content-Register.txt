@@ -1,0 +1,8 @@
+Name: mcux-freertos-drivers
+Version: 0.1.0
+Outgoing License: BSD-3-Clause
+License File: LICENSE.txt
+Format: source code
+Description: FreeRTOS reentrant bus drivers.
+Location: https://github.com/nxp-mcuxpresso/mcux-freertos-drivers
+Origin: NXP (BSD-3-Clause)

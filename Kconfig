@@ -1,0 +1,27 @@
+#
+# Copyright 2024 NXP
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+menu "FreeRTOS drivers"
+    rsource "dspi/Kconfig"
+    rsource "ecspi/Kconfig"
+    rsource "flexcomm/i2c/Kconfig"
+    rsource "flexcomm/spi/Kconfig"
+    rsource "flexcomm/usart/Kconfig"
+    rsource "i2c/Kconfig"
+    rsource "ii2c/Kconfig"
+    rsource "iuart/Kconfig"
+    rsource "lpc_i2c/Kconfig"
+    rsource "lpc_vspi/Kconfig"
+    rsource "lpc_vusart/Kconfig"
+    rsource "lpflexcomm/lpi2c/Kconfig"
+    rsource "lpflexcomm/lpspi/Kconfig"
+    rsource "lpflexcomm/lpuart/Kconfig"
+    rsource "lpi2c/Kconfig"
+    rsource "lpsci/Kconfig"
+    rsource "lpspi/Kconfig"
+    rsource "lpuart/Kconfig"
+    rsource "spi/Kconfig"
+    rsource "uart/Kconfig"
+endmenu

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../bin/generator/sdk_generator/data/sdk_data_schema/v3/software_set_and_project_schema.json
+
+container.freertos-drivers:
+  section-type: container
+  contents:
+    repo_base_path: rtos/freertos/freertos-drivers
+    files:
+    - source: CHANGELOG.md
+    - source: LICENSE.txt
+    - source: README.md
+    - source: SW-Content-Register.txt
+  belong_to: set.middleware.freertos-drivers
+    section_info:
+      description: FreeRTOS drivers
+      version: 0.1.0
+      type: driver
+      full_name: FreeRTOS drivers
+      taxonomy:
+        csub: FreeRTOS drivers
+        belong_to: drivers
+      display_name: FreeRTOS drivers
+
+set.middleware.freertos-drivers:
+  section-type: set
+  belong_to: set.middleware.freertos-drivers
+  section_info:
+    fixed_id: nxp_freertos_drivers
+    version: 0.1.0
+    display_name: FreeRTOS drivers
+    description: FreeRTOS drivers
+    set_location:
+      repo_base_path: rtos/freertos/freertos-drivers
+    type: middleware
+    vendor: NXP
+    product:
+      kex_package:
+        scr:
+          - scr.freertos-drivers
+        kex_web_ui:
+          ui_control: true
+          ui_release_specific: true
+          ui_control_default: false
+          ui_category: drivers
+      cmsis_pack:
+        scr:
+          - scr.freertos-drivers
+        vendor: NXP
+        supported: true
+        pack_root:
+          pack_type: SWP
+          pack_name: FREERTOS-DRIVERS
+          pack_version: 1.0.0
+
+scr.freertos-drivers:
+  section-type: scr
+  belong_to: set.middleware.freertos-drivers
+  contents:
+    Name: FreeRTOS drivers
+    Version: 0.1.0
+    license:
+    - license.bsd-3
+    Format: source code
+    Description: FreeRTOS drivers
+    Location: rtos/freertos/freertos-drivers
+    Origin: NXP
+    Url: https://github.com/nxp-mcuxpresso/freertos-drivers

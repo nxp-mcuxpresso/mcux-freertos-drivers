@@ -1,0 +1,9 @@
+#
+# Copyright 2024 NXP
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+config MCUX_COMPONENT_driver.iuart_freertos
+    bool "iuart_freertos"
+    select MCUX_COMPONENT_driver.iuart
+    select MCUX_COMPONENT_middleware.freertos-kernel
